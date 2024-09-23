@@ -1,0 +1,44 @@
+### Get all authors
+
+GET {{app-url}}/authors
+
+
+### Get author by id
+
+GET {{app-url}}/authors/1
+
+
+### Create author
+
+POST{{app-url}}/authors
+Content-Type: application/json;charset=UTF-8
+
+{
+  "name": "John Doe"
+}
+
+
+### Update author
+
+PUT {{app-url}}/authors/1
+Content-Type: application/json;charset=UTF-8
+
+{
+  "name": "Jane Doe"
+}
+
+
+### Delete author
+
+DELETE {{app-url}}/authors/1
+
+
+### Get revisions on author
+
+GET {{app-url}}/authors/1/revisions
+
+
+### Get latest revision on author
+
+GET {{app-url}}/authors/1/revisions/latest
+
